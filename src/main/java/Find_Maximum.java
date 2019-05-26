@@ -1,10 +1,11 @@
+import java.io.IOException;
 import java.util.*;
 public class Find_Maximum {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         //Vector<Integer> vc = new Vector<Integer>();
-       int[] input = new int[10];
-        System.out.println("enter the 10 input integer values seperated by comma");
-        Scanner sc = new Scanner(System.in).useDelimiter("\\s*,\\s*");// this delimiter can acccpet the input in form of string seperated by commas
+      try{   int[] input = new int[10];
+        System.out.println("enter the 10 integer values seperated by space");
+        Scanner sc = new Scanner(System.in).useDelimiter("\\s* \\s*");// this delimiter can acccpet the input in form of string seperated by commas
          for(int i=0;i<10;i++){
            input[i] = sc.nextInt();
            }
@@ -16,6 +17,12 @@ public class Find_Maximum {
         }
     }
 System.out.println(max);
+
+    }
+      catch (Exception e){
+          System.out.println(e);
+      }
+
 
     }
 }
