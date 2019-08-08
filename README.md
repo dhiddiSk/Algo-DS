@@ -1,2 +1,2 @@
-# Algorithms
-Revision on Algorithms using Java
+# Algorithms -Java(for practice)
+They include sorting, searching, data Strutcures.
