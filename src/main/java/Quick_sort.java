@@ -20,20 +20,29 @@ public class Quick_sort{
 
     private void sorting(int[] arrayInput, int left, int right) {
        if(left<right+1){
-        int p = partition(arrayInput,left,right);
+        /*
+        partition method is called which returns an index
+         */
+           int p = partition(arrayInput,left,right);
+
         sorting(arrayInput,left,p-1);
         sorting(arrayInput,p+1,right);
 
     }
     }
-
+/*
+this pivot calculator calculates random inxex
+@return int index
+ */
     private  int pivotcalculator(int left, int right){
        Random obj2 = new Random();
       return obj2.nextInt((right-left)+1)+left;
 
     }
 
-
+/*
+Sorts the array such that the right side array are greater than pivot and left side are lesser than pivot.
+ */
     private  int partition(int[] arrayInput, int left, int right) {
         swap(arrayInput, left, pivotcalculator(left, right));
         int border = left + 1;
@@ -45,6 +54,9 @@ public class Quick_sort{
         swap(arrayInput,left,border-1);
          return border-1;
     }
+  /*
+  This method swaps the elements the array.
+   */
      void swap(int[] arrayInput, int left, int right) {
             int temp = arrayInput[left];
             arrayInput[left] = arrayInput[right];
