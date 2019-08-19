@@ -12,49 +12,51 @@ results in an completely sorted array.
   do this iteratively until the whole array is sorted completely
  */
 import java.util.Arrays;
+import java.util.Random;
 public class Quick_sort{
-    private static void partition(int left, int right,int[] arrayInput) {
-       int pivot = arrayInput[right];
-       int lastButOne = right-1;
-       /*
-             left elements of the array such that the left array elements are smaller than pivot.
-             */
-                 while(left < lastButOne){
-                    while(arrayInput[left]<pivot && arrayInput[lastButOne]>pivot){
-                        ++left;
-                        --lastButOne;
-                          }
-                    while(arrayInput[left]>=pivot && arrayInput[lastButOne]>pivot){
-                        --lastButOne;
-                         }
-                   while(arrayInput[left]<pivot && arrayInput[lastButOne]<=pivot){
-                       ++left;
-                   }
-                    if(arrayInput[left] > pivot && arrayInput[lastButOne] <= pivot){
-                         Quick_sort.swap(arrayInput,left,lastButOne);
-                         ++left;
-                         --lastButOne;
-                        }
-                    else{
-                        ++left;
-                        --lastButOne;
-                    }
-                   }
-        System.out.println(Arrays.toString(arrayInput));
-               }
-
-     public static void swap(int[] arrayInput, int left, int lastButOne){
-        /*
-        Swapping the elements
-         */
-          int temp = arrayInput[left];
-          arrayInput[left] = arrayInput[lastButOne];
-          arrayInput[lastButOne] = temp;
+    public void sorting(int[] arrayInput){
+       sorting(arrayInput,0,arrayInput.length-1);
     }
+
+    private void sorting(int[] arrayInput, int left, int right) {
+       if(left<right+1){
+        int p = partition(arrayInput,left,right);
+        sorting(arrayInput,left,p-1);
+        sorting(arrayInput,p+1,right);
+
+    }
+    }
+
+    private  int pivotcalculator(int left, int right){
+       Random obj2 = new Random();
+      return obj2.nextInt((right-left)+1)+left;
+
+    }
+
+
+    private  int partition(int[] arrayInput, int left, int right) {
+        swap(arrayInput, left, pivotcalculator(left, right));
+        int border = left + 1;
+        for (int i = border; i <= right; i++) {
+                  if(arrayInput[i]<arrayInput[left]){
+                       swap(arrayInput,i,border++);
+                  }
+        }
+        swap(arrayInput,left,border-1);
+         return border-1;
+    }
+     void swap(int[] arrayInput, int left, int right) {
+            int temp = arrayInput[left];
+            arrayInput[left] = arrayInput[right];
+            arrayInput[right] = temp;
+
+                    }
 
     public static void main(String[] args){
-        int[] arrayInput = new int[]{3, 4, 1, 32, 0, 1, 5, 12 ,2, 5 ,7 ,8 ,9, 2, 44, 111, 5};
-          int left =0, right = (arrayInput.length)-1;
-        Quick_sort.partition(left,right,arrayInput);
+        int[] arrayInput = new int[]{9,0,1,3,4,5,2,9,8,7,6,5,9,1,0,9};
+          Quick_sort obj = new Quick_sort();
+          obj.sorting(arrayInput);
+        System.out.println(Arrays.toString(arrayInput));
     }
 }
+
