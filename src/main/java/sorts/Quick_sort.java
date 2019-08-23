@@ -1,4 +1,4 @@
-/*
+package sorts;/*
 Here in the quick sort the elements of an given array are sorted by considering an pivot(generally the middle ones)
 element and comparing remaining elements left and right to it. Thus, results in an array with lesser elements to left
 side of pivot and greater to the right side to it.
