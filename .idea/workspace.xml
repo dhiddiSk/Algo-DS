@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ef4a6cb-5b0c-428b-9457-2b39f58736c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Algorithms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/BreadthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BreadthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/DepthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DepthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/genral/Find_Maximum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/genral/Find_Maximum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sorts/Bubblesort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sorts/Bubblesort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sorts/Pancakesort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sorts/Pancakesort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sorts/Quick_sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sorts/Quick_sort.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566469778470</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1567806908027</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1567806908027</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,11 +191,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="update" />
     <MESSAGE value="New classes to be done" />
     <MESSAGE value="still not yet completed" />
     <MESSAGE value="Done" />
     <MESSAGE value="done till chossing maximum value, and to be done more" />
-    <option name="LAST_COMMIT_MESSAGE" value="done till chossing maximum value, and to be done more" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
