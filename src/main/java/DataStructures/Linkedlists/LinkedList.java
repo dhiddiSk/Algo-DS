@@ -20,28 +20,11 @@ public class LinkedList{
             while (n.next!=null){
                 n = n.next;
             }
-
             n.next = node;
-
-
-
         }
     }
 
-    public void remove(int removeNumber){
-
-        Node node = new Node();
-        while (head != null){
-
-            if(node.value == removeNumber){
-
-            }
-            break;
-
-        }
-    }
-
-    public void show(){
+     public void show(){
 
         Node node = head;
         while (node.next!=null){
@@ -50,5 +33,50 @@ public class LinkedList{
         }
         System.out.println(node.value);
     }
+
+    public void insertAtStart(int NewElement){
+
+        Node node = new Node();
+        node.value = NewElement;
+        node.next = null;
+        node.next = head;
+        head = node;
+
+
+    }
+
+    public void insertAtIndex(int index, int NewElement){
+
+        Node node = new Node();
+        node.value = NewElement;
+        node.next = null;
+
+        Node n = head;
+
+        if(index == 0){
+            insertAtStart(NewElement);
+        }
+
+        else{
+
+            for(int i=0;i<index;i++){
+
+                n = n.next;
+            }
+            node.next = n.next;
+            n.next = node;
+
+        }
+
+
+
+
+        node.next = head;
+        head = node;
+
+
+    }
+
+
 
 }
