@@ -31,12 +31,15 @@ import java.util.regex.*;
 
             int newIndex = 0;
 
+           // copy elements after the d till the size of the array
+
             while(NumberOfRotations < a.length){
                 afterRotation[newIndex] = a[NumberOfRotations];
                 newIndex++;
                 NumberOfRotations++;
             }
 
+            // copy elements from 0 to d
             NumberOfRotations=0;
             while (NumberOfRotations<d){
 
