@@ -2,6 +2,13 @@ package sorts.Strings;
 import java.io.*;
 import java.util.*;
 
+/*
+Task is to delete as many characters as possible using this method and print the resulting string. If the final string is empty, print Empty String
+Sample Input: aaabccddd, Sample Output: abd
+aaabccddd → abccddd → abddd → abd
+
+*/
+
 public class ReducedString {
 
     // Complete the superReducedString function below.
