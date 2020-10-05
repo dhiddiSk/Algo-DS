@@ -1,4 +1,5 @@
-# DataStructures and Algorithms
-Revision on Sortings, Searching, data Strutcures, DivideConquer, DynamicProgramming etc.
+##Revision of DataStructures
 
--> Some of the problems "quetions" are taken from hackerRank challenges for practice.
+-> A few of the data structure problems "questions" are referred from the hacker rank challenges online platform. 
+
+##General algorithms and sortings
